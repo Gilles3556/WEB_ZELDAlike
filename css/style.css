@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+#text{
+    font-family: "Press Start 2P";
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(84, 84, 84);
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+body{width:800px;
+	height:600px;
+	background-color:#003300;
+}
+#menuJ ol, #menuD ul {
+	list-style-type:none;
+}
+
+#menu {
+	margin-left:1115px;
+	position:relative;
+	width:100%;
+	border: solid 7px black;
+	display:inline-block;
+	z-index:-1;
+}
+
+#carte {
+	position:absolute;
+	border-image: linear-gradient(red, blue) 27;
+	border: solid 7px black;
+	z-index:-2;
+	display:inline-block;
+}
+
+#menuJ, #menuD{
+	position:absolute; 
+	display:none;
+	font-family: "Press Start 2P";
+    font-size:18px;
+	margin:0px;
+	width: 200px;
+}
+#vie {
+	width:400px;
+}
+#centvie, #quatrevingtdixvie, #quatrevingtvie, #soixantedixvie, #soixantevie, #cinquantevie, #quarantevie, #trentevie, #vingtvie, #dixvie, #zerovie {
+	opacity:0;
+	position:absolute;
+	width:10.3%;
+}
+#centarmor, #quatrevingtdixarmor, #quatrevingtarmor, #soixantedixarmor, #soixantearmor, #cinquantearmor, #quarantearmor, #trentearmor, #vingtarmor, #dixarmor, #zeroarmor {
+	opacity:0;
+	position:absolute;
+	width:10.3%;
+}
+#centenergy, #quatrevingtdixenergy, #quatrevingtenergy, #soixantedixenergy, #soixanteenergy, #cinquanteenergy, #quaranteenergy, #trenteenergy, #vingtenergy, #dixenergy, #zeroenergy {
+	opacity:0;
+	position:absolute;
+	width:10.3%;
+}
+#flecheup, #flechedown, #flecheright, #flecheleft, #padcenter {
+	position:absolute;
+}
+#darkflecheup, #darkflechedown, #darkflecheright, #darkflecheleft {
+	position:absolute;
+	z-index:10;
+}
+#flecheup, #darkflecheup {
+	width:5%;
+	top:500px;
+	left:1480px;
+}
+#flechedown, #darkflechedown {
+	width:5%;
+	top:800px;
+	left:1480px;
+}
+#flecheright, #darkflecheright{
+	width:5%;
+	top:660px;
+	left:1630px;
+}
+#flecheleft, #darkflecheleft  {
+	width:5%;
+	top:660px;
+	left:1330px;
+}
+#padcenter {
+	width:5%;
+	top:650px;
+	left:1480px;
+}
+.pion{
+	text-align:center;
+	position:absolute; 0px; left:0px;
+}
+#J1down, #J1up, #J1right, #J1left {
+	width:23px;
+	height:23px;
+}
+#monster1, #monster2, #monster3 {
+	width:23px;
+	height:23px;
+}

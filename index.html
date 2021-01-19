@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+    <title>Pocket Zelda</title>
+</head>
+<body onload="init()">
+	<nav id="menuJ">
+		<ol>
+			<li id="take">PRENDRE</li>
+			<br>
+			<li id="food">CONSOMMER</li>
+			<br>
+			<li id="attack">ATTAQUER</li>
+		</ol>
+	</nav>
+	<section>
+		<div id="m1" class="pion monster"><img id="monster1" src="img/monster1.png"></div>
+		<div id="m2" class="pion monster"><img id="monster2" src="img/monster2.png"></div>	
+		<div id="m3" class="pion monster"><img id="monster3" src="img/monster3.png"></div>
+		<div id="J1" class="pion joueur"><img id="J1up" src="img/jup.png"></div>
+		<div id="J2" class="pion joueur"><img id="J1down" src="img/jback.png"></div>
+		<div id="J3" class="pion joueur"><img id="J1right" src="img/jright.png"></div>
+		<div id="J4" class="pion joueur"><img id="J1left" src="img/jleft.png"></div>
+		
+		<figure class="map">
+			<img src="img/carte.jpg" id="carte" width="1080" height="900" alt="la carte" />
+			<img src="img/menu.jpg" id="menu" alt="la carte" />
+		</figure>
+		<figure class="vie">
+			<img src="img/0life.png" id="zerovie" alt="0% de vie" />
+			<img src="img/10life.png" id="dixvie" alt="10% de vie" />
+			<img src="img/20life.png" id="vingtvie" alt="20% de vie" />
+			<img src="img/30life.png" id="trentevie" alt="30% de vie" />
+			<img src="img/40life.png" id="quarantevie" alt="40% de vie" />
+			<img src="img/50life.png" id="cinquantevie" alt="50% de vie" />
+			<img src="img/60life.png" id="soixantevie" alt="60% de vie" />
+			<img src="img/70life.png" id="soixantedixvie" alt="70% de vie" />
+			<img src="img/80life.png" id="quatrevingtvie" alt="80% de vie" />
+			<img src="img/90life.png" id="quatrevingtdixvie" alt="90% de vie" />
+			<img src="img/100life.png" id="centvie" alt="100% de vie" />
+		</figure>
+		<figure class="armor">
+			<img src="img/0armor.png" id="zeroarmor" alt="0% armure" />
+			<img src="img/10armor.png" id="dixarmor" alt="10% armure" />
+			<img src="img/20armor.png" id="vingtarmor" alt="20% armure" />
+			<img src="img/30armor.png" id="trentearmor" alt="30% armure" />
+			<img src="img/40armor.png" id="quarantearmor" alt="40% armure" />
+			<img src="img/50armor.png" id="cinquantearmor" alt="50% armure" />
+			<img src="img/60armor.png" id="soixantearmor" alt="60% armure" />
+			<img src="img/70armor.png" id="soixantedixarmor" alt="70% armure" />
+			<img src="img/80armor.png" id="quatrevingtarmor" alt="80% armure" />
+			<img src="img/90armor.png" id="quatrevingtdixarmor" alt="90% armure" />
+			<img src="img/100armor.png" id="centarmor" alt="100% de vie" />
+		</figure>
+		<figure class="energy">
+			<img src="img/0energy.png" id="zeroenergy" alt="0% d'énergie" />
+			<img src="img/10energy.png" id="dixenergy" alt="10% d'énergie" />
+			<img src="img/20energy.png" id="vingtenergy" alt="20% d'énergie" />
+			<img src="img/30energy.png" id="trenteenergy" alt="30% d'énergie" />
+			<img src="img/40energy.png" id="quaranteenergy" alt="40% d'énergie" />
+			<img src="img/50energy.png" id="cinquanteenergy" alt="50% d'énergie" />
+			<img src="img/60energy.png" id="soixanteenergy" alt="60% d'énergie" />
+			<img src="img/70energy.png" id="soixantedixenergy" alt="70% d'énergie" />
+			<img src="img/80energy.png" id="quatrevingtenergy" alt="80% d'énergie" />
+			<img src="img/90energy.png" id="quatrevingtdixenergy" alt="90% d'énergie" />
+			<img src="img/100energy.png" id="centenergy" alt="100% d'énergie" />
+		</figure>
+		<figure class="move">
+			<img src="img/padcenter.png" id="padcenter" alt="decoration pad" />
+			<img src="img/flecheup.png" id="flecheup" alt="se deplacer vers le haut" />
+			<img src="img/flechedown.png" id="flechedown" alt="se deplacer vers le bas" />
+			<img src="img/flecheleft.png" id="flecheleft" alt="se deplacer vers la gauche" />
+			<img src="img/flecheright.png" id="flecheright" alt="se deplacer vers la droite" />
+			<img src="img/darkflecheup.png" id="darkflecheup" onclick="deplacer('up')" alt="se deplacer vers le haut" />
+			<img src="img/darkflechedown.png" id="darkflechedown" onclick="deplacer('down')" alt="se deplacer vers le bas" />
+			<img src="img/darkflecheleft.png" id="darkflecheleft" onclick="deplacer('left')" alt="se deplacer vers la gauche" />
+			<img src="img/darkflecheright.png" id="darkflecheright" onclick="deplacer('right')" alt="se deplacer vers la droite" />
+		</figure>
+		<figure>
+		</figure>
+	</section>
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/myjs.js"></script>
+</body>
+</html>
